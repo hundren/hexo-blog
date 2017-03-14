@@ -1,38 +1,37 @@
 ---
-title: Hello World
+title: Hello Hexo
+categories: 文章
+tags: 第一次
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+博客换上Hexo主题，
+## 很久以前
 
-## Quick Start
-
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
+### 就被它的这个
 
 ``` bash
-$ hexo server
+试试代码
 ```
+1001001111100101010110
 
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
+### 文章目录吸引了
 
 ``` bash
-$ hexo generate
+console.log('hello world');
 ```
+列表？
+1. Red
+2. Green
+3. Blue
 
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
+### 今天终于能够换来试试
 
 ``` bash
-$ hexo deploy
+$('#life').html('希望每个月能更一篇，以此为鉴');
 ```
+### 表示好兴奋
 
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+大家提提意见博客能有什么改造的地方
+
+``` bash
+function bye(){return "恭喜你获得阅读我的第一篇博客成就！"}
+```
