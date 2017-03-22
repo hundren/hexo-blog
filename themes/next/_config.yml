@@ -384,3 +384,7 @@ images: images
 version: 5.0.1
 
 duoshuo_shortname: hundren
+
+reward_comment: 请不要给我打赏！
+wechatpay: /wei.jpg
+alipay: /zhi.jpg
