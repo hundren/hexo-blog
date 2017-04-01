@@ -26,10 +26,10 @@ rss:
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
   archives: /archives
+  categories: /categories
   tags: /tags
+  about: /about
   #commonweal: /404.html
 
 
@@ -59,6 +59,7 @@ menu_icons:
 # scheme: Muse
 scheme: Mist
 #scheme: Pisces
+
 
 
 # ---------------------------------------------------------------
@@ -291,9 +292,9 @@ facebook_sdk:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: BprwSQXSWU1vF1GVufJDFVsk-gzGzoHsz
+  app_key: fCFE8FwLxoBDGYPJ3ImLz1XA
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -382,3 +383,9 @@ images: images
 
 # Theme version
 version: 5.0.1
+
+duoshuo_shortname: hundren
+
+reward_comment: 请不要给我打赏！
+wechatpay: /wei.jpg
+alipay: /zhi.jpg

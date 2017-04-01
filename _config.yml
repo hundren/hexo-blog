@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Zgh
 subtitle:
-description:
+description: Just do IT!
 author: zgh
 language: zh-Hans
 timezone:
@@ -64,7 +64,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-
+avatar: /images/avatar.jpg
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
