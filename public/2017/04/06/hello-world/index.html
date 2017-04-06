@@ -84,19 +84,17 @@
 
 
 
-<meta name="description" content="博客换上Hexo主题，
-很久以前">
+<meta name="description" content="博客换上Hexo主题， 很久以前">
+<meta name="keywords" content="第一次">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello Hexo">
-<meta property="og:url" content="http://yoursite.com/2017/03/14/hello-world/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/04/06/hello-world/index.html">
 <meta property="og:site_name" content="Zgh">
-<meta property="og:description" content="博客换上Hexo主题，
-很久以前">
-<meta property="og:updated_time" content="2017-03-20T15:51:06.633Z">
+<meta property="og:description" content="博客换上Hexo主题， 很久以前">
+<meta property="og:updated_time" content="2017-04-06T14:19:12.889Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello Hexo">
-<meta name="twitter:description" content="博客换上Hexo主题，
-很久以前">
+<meta name="twitter:description" content="博客换上Hexo主题， 很久以前">
 
 
 
@@ -170,8 +168,6 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
             首页
           </a>
         </li>
@@ -179,8 +175,6 @@
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -190,8 +184,6 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
             分类
           </a>
         </li>
@@ -199,8 +191,6 @@
         
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -210,9 +200,15 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
             关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-demo">
+          <a href="/demo" rel="section">
+            
+            案例
           </a>
         </li>
       
@@ -266,8 +262,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-03-14T22:48:30+08:00" content="2017-03-14">
-              2017-03-14
+            <time itemprop="dateCreated" datetime="2017-04-06T22:19:12+08:00" content="2017-04-06">
+              2017-04-06
             </time>
           </span>
 
@@ -296,8 +292,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/03/14/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/14/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2017/04/06/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/06/hello-world/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -306,6 +302,15 @@
           
 
           
+          
+             <span id="/2017/04/06/hello-world/" class="leancloud_visitors" data-flag-title="Hello Hexo">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
           
@@ -402,8 +407,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/03/14/hello-world/"
-           data-title="Hello Hexo" data-url="http://yoursite.com/2017/03/14/hello-world/">
+      <div class="ds-thread" data-thread-key="2017/04/06/hello-world/"
+           data-title="Hello Hexo" data-url="http://yoursite.com/2017/04/06/hello-world/">
       </div>
     
   </div>
@@ -477,6 +482,17 @@
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/hundren" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
         </div>
 
         
@@ -521,6 +537,7 @@
 </div>
 
 <div class="powered-by">
+
   点一下右边
 </div>
 <div class="theme-info">
@@ -688,6 +705,7 @@ function c() {
  
     
     )()    '>对就是这里</a>
+
 </div>
 
         
@@ -797,6 +815,105 @@ function c() {
   
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("BprwSQXSWU1vF1GVufJDFVsk-gzGzoHsz", "fCFE8FwLxoBDGYPJ3ImLz1XA");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
