@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[一些前端题目]]></title>
+    <url>%2F2017%2F06%2F30%2Ftest-list%2F</url>
+    <content type="text"><![CDATA[整理一下一些前端题目1.用纯css,html写一个导航栏的tab切换123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137方法1：&lt;ul class='nav'&gt; &lt;li&gt;&lt;a href="#content1"&gt;列表1&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href="#content2"&gt;列表2&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div id="content1"&gt;列表1内容:123456&lt;/div&gt;&lt;div id="content2"&gt;列表2内容:abcdefgkijkl&lt;/div&gt;&lt;style type="text/css"&gt; #content1, #content2&#123; display:none; &#125; #content1:target, #content2:target&#123; display:block; &#125; #content1:target ~ .nav li&#123; // 改变li元素的背景色和字体颜色 &amp;:first-child&#123; background:#ff7300; color:#fff; &#125; &#125; #content2:target ~ .nav li&#123; // 改变li元素的背景色和字体颜色 &amp;:last-child&#123; background:#ff7300; color:#fff; &#125; &#125;&lt;/style&gt;方法2：&lt;div class="container"&gt; &lt;input class="nav1" id="li1" type="radio" name="nav"&gt; &lt;input class="nav2" id="li2" type="radio" name="nav"&gt; &lt;ul class='nav'&gt; &lt;li class='active'&gt;&lt;label for="li1"&gt;列表1&lt;/label&gt;&lt;/li&gt; &lt;li&gt;&lt;label for="li2"&gt;列表2&lt;/label&gt;&lt;/li&gt; &lt;/ul&gt; &lt;div class="content"&gt; &lt;div class="content1"&gt;列表1内容:123456&lt;/div&gt; &lt;div class="content1"&gt;列表2内容:abcdefgkijkl&lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&lt;style type="text/css"&gt; .container&#123; position:relative; width:400px; margin: 50px auto;&#125;input&#123; display:none;&#125;.nav&#123; position:relative; overflow:hidden;&#125;li&#123; width:200px; float:left; text-align:center; background:#ddd;&#125;li label&#123; display:block; width:200px; line-height:36px; font-size:18px; cursor:pointer;&#125;.content&#123; position:relative; overflow:hidden; width:400px; height:100px; border:1px solid #999; box-sizing:border-box; padding:10px;&#125;.content1,.content2&#123; display:none; width:100%; height:100%;&#125;.nav1:checked ~ .nav li &#123; background:#ddd; color:#000; &amp;:first-child&#123; background:#ff7300; color:#fff; &#125;&#125;.nav2:checked ~ .nav li&#123; background:#ddd; color:#000; &amp;:last-child&#123; background:#ff7300; color:#fff; &#125;&#125;.nav1:checked ~ .content &gt; div&#123; display:none; &amp;:first-child&#123; display:block; &#125;&#125;.nav2:checked ~ .content &gt; div&#123; display:none; &amp;:last-child&#123; display:block; &#125;&#125;.active &#123; background:#ff7300; color:#fff;&#125;.default&#123; display:block;&#125;&lt;/style&gt; 2.说出输出顺序结果 12345678910111213setTimeout(function() &#123; console.log(1)&#125;, 0);new Promise(function executor(resolve) &#123; console.log(2); for( var i=0 ; i&lt;10000 ; i++ ) &#123; i == 9999 &amp;&amp; resolve(); &#125; console.log(3);&#125;).then(function() &#123; console.log(4);&#125;);console.log(5); 首先先碰到一个 setTimeout，于是会先设置一个定时，在定时结束后将传递这个函数放到任务队列里面，因此开始肯定不会输出 1 。 然后是一个 Promise，里面的函数是直接执行的，因此应该直接输出 2 3 。 然后，Promise 的 then 应当会放到当前 tick 的最后，但是还是在当前 tick 中。 因此，应当先输出 5，然后再输出 4 。 最后在到下一个 tick，就是 1 。 “2 3 5 4 1” 3.统计字符串中每种字符出现的次数,出现次数最多的是? 出现?次123456789101112131415161718192021222324 var str="helloworld"; 方法一：用hash for(var i=0,hash=&#123;&#125;;i&lt;str.length;i++)&#123; if(hash[str[i]])&#123; hash[str[i]]++ &#125;else&#123; hash[str[i]]=1; &#125; &#125; console.dir(hash);方法二：用正则var arr=str.split("") .sort() .join("") .match(/([a-z])\1*/g) .sort(function(a,b)&#123;return b.length-a.length; &#125;)console.log("出现最多的是: "+arr[0][0] +"共"+arr[0].length+"次");var hash=&#123;&#125;; arr.forEach(function(val)&#123; hash[val[0]]=val.length; &#125;); console.dir(hash); 4.以下分别输出什么,为什么123456789101112var User = &#123; count: 1, getCount: function() &#123; return this.count; &#125;&#125;; console.log(User.getCount()); // what? var func = User.getCount;console.log(func()); // what? 答案是1和undefined。 func是在winodw的上下文中被执行的，所以会访问不到count属性。 5. 9.在页面中展现一颗多叉树的结构，如图，并添加节点的选择、增加与删除的功能 ·点击某个节点元素，则该节点元素呈现一个特殊被选中的样式 ·增加一个删除按钮，当选中某个节点元素后，点击删除按钮，则将该节点及其所有子节点删除掉 ·增加一个输入框及一个“添加”按钮当选中某个节点元素后，点击增加按钮，则在该节点下增加一个子节点，节·点内容为输入框中内容，插入在其子节点的最后一个位置 ·提供一个按钮，显示开始遍历，点击后，以动画的形式呈现遍历的过程 ·当前被遍历到的节点做一个特殊显示（比如不同的颜色） ·每隔一段时间（500ms，1s等时间自定）再遍历下一个节点 ·增加一个输入框及一个“查询”按钮，点击按钮时，开始在树中以动画形式查找节点内容和输入框中内容一致的节点，找到后以特殊样式显示该节点，找不到的话给出找不到的提示。查询过程中的展示过程和遍历过程保持一致 http://ife.baidu.com/2016/task/all]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>面试 题目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[微信小程序填坑日记]]></title>
+    <url>%2F2017%2F06%2F21%2Fwehchat-small%2F</url>
+    <content type="text"><![CDATA[记录一下那些年，开发微信小程序踩过的坑 微信小程序认识总体认识隐约感受到的RN的身影官方的Q&amp;A文档 为什么脚本内不能使用window等对象页面的脚本逻辑是在JsCore中运行，JsCore是一个没有窗口对象的环境，所以不能在脚本中使用window，也无法在脚本中操作组件 碰巧RN也是通过JsCore与手机的原生语言通信的，简单来说它只不过是以 JavaScript 的形式告诉 Objective-C /java该执行什么代码反正我们知道它能直接调用微信本身的控件就行了 小体认识MVVM,前后端分离,数据绑定,数据驱动 一些代码自定义弹框12&lt;view hidden="&#123;&#123;showTrue&#125;&#125;"&gt;&lt;/view&gt;&lt;view wx:if="&#123;&#123;showTrue&#125;&#125;"&gt;&lt;/view&gt; 改变样式1&lt;view class="&#123;&#123;diyClassName&#125;&#125;"&gt;&lt;/view&gt; 学习资源最重要的当然是官方文档微信小程序资源汇总用chrome运行小程序官方demo源码 填过的坑1.透明底的png图片,border-raduis：50%会变形2.canvas在swiper和scroll-view不兼容会浮出来3.iphone：scroll-view内部滚动必须设置高度，在iphone不能设100%,可以通过js设高度或设固定值4.iphone：image图片里padding不能设百分比,只能设固定值5.最多只能打开5个页面,注意一下页面跳转的关闭]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>填坑</tag>
+        <tag>微信小程序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[1.10乘100为什么不等于110]]></title>
+    <url>%2F2017%2F05%2F10%2Fjs-note%2F</url>
+    <content type="text"><![CDATA[事情的起因要从今天的微信支付调试说起，众所周知微信支付的接口，要求传入的金额数值是按分为单位的，所以都必须是大于0的整数。&emsp;&emsp;所以我们一般业务的实际金额都要做乘以100的处理，例如某大妈刚在市场买了1.10元的菜，她摸了摸口袋，看了一眼诚实憨厚的大叔，已经麻利地帮她打包好菜，实在不忍心说出自己今天忘记带钱包。&emsp;&emsp;大叔正打算把菜递给大妈之际，看到大妈尾头紧皱，已经失去平时要把1.10元的菜讲价到1.00元的风韵神采，便意识到事情并不简单，便默默从下方抽屉中抽出一个微信二维码递给她。&emsp;&emsp;大妈心中暗喜，迅速拔出他儿子刚为她买的最新款红米手机，熟练地扫过二维码，也没有要讲价到1.00元的意思了，麻利地在微信上输入1.10元的金额，点击立即支付，输入过密码。。。&emsp;&emsp;“参数错误：你输入的金额格式不正确”，看着手机弹出的提示弹窗，大妈狠狠咬了牙，又重复了一遍上述的支付动作，“参数错误：你输入的金额格式不正确”。这时大妈崩溃的用着恳求可怜的眼神看着大叔，大叔也一面无奈地轻轻将打包好的菜微微收了过来一下，空气突然安静地凝固起来。 问题剖释&emsp;&emsp;空中传来旁白君的声音，它解析道：&emsp;&emsp;没错，这为大妈所使用的程序，其实就是某知名博文《1.10乘100为什么不等于110》的博主还未调试完之前写的代码。&emsp;&emsp;他就是这样把金额1.10乘100然后传过去微信的支付接口，他是那样的信心满满，因为他之前含着泪用自己的微信零钱支付的测试都是那样一条条地测试成功。他一次次发起1.10元支付测试，看着一次次弹出的反馈信息“参数错误：你输入的金额格式不正确”，他越觉得莫名奇妙，1.10乘100不就等于110吗，还有什么格式错误的？然而当这个too young too naive的少年，找出这个输入结果后，空气又突然安静地凝固起来。12&gt;1.10*100110.00000000000001 WHAT THE *! IEEE754 双精度浮点数Javascript 作为一门动态语言，其数字类型只有 number 一种。 nubmer 类型使用的就是美国电气电子工程师学会 IEEE754 标准中以64-bit存储的的双精度浮点。而浮点数表示方式具有以下特点：1.浮点数可表示的值范围比同等位数的整数表示方式的值范围要大得多； 2.浮点数无法精确表示其值范围内的所有数值，而有符号和无符号整数则是精确表示其值范围内的每个数值； 3.浮点数只能精确表示m*2e的数值； 4.当biased-exponent为2e-1-1时，浮点数能精确表示该范围内的各整数值； 5.当biased-exponent不为2e-1-1时，浮点数不能精确表示该范围内的各整数值。 由于部分数值无法精确表示（存储），于是在运算统计后偏差会愈见明显。 So Why 1.10 * 100 === 110.00000000000001?1.1.10实际存储时的位模式是：0011111111110001100110011001100110011001100110011001100110011001;2.100实际存储时的位模式是0110010000000000000000000000000000000000000000000000000000000000;3.实际存储的位模式作为操作数进行浮点数乘法:110000110011100010111011110111100110100001100000000000000。转换为十进制即为110.00000000000001。 0.1+0.2其实这和那著名的 0.1 + 0.2 === 0.30000000000000004问题是一个道理的，可笑的是，只要我们的大妈把价讲到1.00元12&gt;1.00*100100 就不会有问题了。 总结JS坑常有，我们慢慢填之。]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>JS填坑</tag>
+        <tag>填坑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello Hexo]]></title>
+    <url>%2F2017%2F04%2F06%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[博客换上Hexo主题， 很久以前 就被它的这个1试试代码 1001001111100101010110 文章目录吸引了1console.log('hello world'); 列表？ Red Green Blue 今天终于能够换来试试1$('#life').html('希望每个月能更一篇，以此为鉴'); 表示好兴奋大家提提意见博客能有什么改造的地方 1function bye()&#123;return "恭喜你获得阅读我的第一篇博客成就！"&#125;]]></content>
+      <categories>
+        <category>文章</category>
+      </categories>
+      <tags>
+        <tag>第一次</tag>
+      </tags>
+  </entry>
+</search>

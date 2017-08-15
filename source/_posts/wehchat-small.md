@@ -9,7 +9,7 @@ tags: [微信小程序,填坑]
 
 ## 总体认识
 隐约感受到的RN的身影
-[官方的Q&A文档](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html)
+[官方的Q&A文档](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/performance/tips.html)
 >为什么脚本内不能使用window等对象
 >页面的脚本逻辑是在JsCore中运行，JsCore是一个没有窗口对象的环境，所以不能在脚本中使用window，也无法在脚本中操作组件
 
