@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="zgh 前端 量子" />
+  <meta name="keywords" content="zgh 前端 量子 游戏 H5 Game 意识" />
 
 
 
@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="Zgh">
 <meta property="og:description" content="Make it big   *{ font-family:Arial; } 	body { 				background: white; 			}  #canvas,div{                 cursor: crosshair; 				left: 0; 				position: relative; 				top: 0; } .label{ 	margin-left:">
-<meta property="og:updated_time" content="2017-08-15T14:27:47.203Z">
+<meta property="og:updated_time" content="2017-08-16T15:08:35.910Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Zgh">
 <meta name="twitter:description" content="Make it big   *{ font-family:Arial; } 	body { 				background: white; 			}  #canvas,div{                 cursor: crosshair; 				left: 0; 				position: relative; 				top: 0; } .label{ 	margin-left:">
@@ -308,7 +308,7 @@ var inmotion2; //judge the mouse if in the enemy ball
 var count=0;         //use to count the onclick
 var die=0;           //write down which ball will die
 var tries = 0;
-var score = new Array("AA Cup(你好)","A Cup(我叫Hugo)","B Cup(我是一名)","C Cup(前端工程师)","D Cup(兼业余H5游戏爱好开发者)","E Cup(后台语言技能树:nodejs)","F Cup(有微信小程序开发经验)","G Cup(后面有彩蛋欢迎继续挑战)","H Cup(再后面有我的邮箱地址,加油","I Cup","J Cup","我也不知道还有没有这种杯的了","看来某君的毅力不错","该不会还能再大吧","哇，你太大了，我受不了","不要啊，放个这个球吧","你不是人","你已经超神了","说实话，我想不到会有人这么无聊玩这么久","但是我我觉得再大点的话可能会爆的哦","其实我不知道你玩的时候有没有看这些字，但当你看到 这里的时候，我会告诉你我是在故意分你神的吗哈哈","呕血数组都不够长了 ","再来一发吧，有惊喜","游戏的版本号是ver.1.26034,作者：Biscuits_39","记住你这份毅力吧，我相信没什么事能难道你的了，如果能按F5再成功挑战一次的话","开玩笑的你继续挑战，把结果给我的邮箱吧","邮箱hundren@qq.com","哈哈如果你刚才忘记记下我的邮箱的话，可能又要重新打过了","除非是某君看源代码的，谢绝骚扰","来吧，挤爆框吧","之后是测试代码","d","dd","dd","再然后就没然后了，你自己undifind去吧");
+var score = new Array("AA Cup(你好)","A Cup(我叫Hugo)","B Cup(我是一名)","C Cup(前端工程师)","D Cup(兼业余H5游戏爱好开发者)","E Cup(后台语言技能树:nodejs)","F Cup(有微信小程序开发经验)","G Cup(后面有彩蛋欢迎继续挑战)","H Cup(再后面有我的邮箱地址,加油)","I Cup(个人爱好)","J Cup(编程,游戏,编程游戏,量子物理)","我也不知道还有没有这种杯的了","看来某君的毅力不错","该不会还能再大吧","哇，你太大了，我受不了","不要啊，放个这个球吧","你不是人","你已经超神了","说实话，我想不到会有人这么无聊玩这么久","但是我我觉得再大点的话可能会爆的哦","其实我不知道你玩的时候有没有看这些字，但当你看到 这里的时候，我会告诉你我是在故意分你神的吗哈哈","呕血数组都不够长了 ","再来一发吧，有惊喜","游戏的版本号是ver.1.26034,作者：Biscuits_39","记住你这份毅力吧，我相信没什么事能难道你的了，如果能按F5再成功挑战一次的话","开玩笑的你继续挑战，把结果给我的邮箱吧","邮箱hundren@qq.com","哈哈如果你刚才忘记记下我的邮箱的话，可能又要重新打过了","除非是某君看源代码的，谢绝骚扰","来吧，挤爆框吧","之后是测试代码","d","dd","dd","再然后就没然后了，你自己undifind去吧");
 var scorecount=0;
 var max_scorecount=0;
 var tt=21;
@@ -531,13 +531,13 @@ function init(){
 </script>
 </head>
 <body onload="init();">
-<div class="label">现在的级数: <span id="score">AA&nbspCup</span></div>
+<div class="label">现在的我: <span id="score">AA&nbspCup</span></div>
 
 	<div class="label">历史最大的级数: <span id="max_score">AA&nbspCup</span></div>
 	<div class="label">出手次数: <span id="tries">0</span>次</div>
     <canvas id="canvas" width="850" height="510">
     </canvas>
-    <h2>看你能把那个球搞多大</h2>
+    <h2>把球弄大,了解我更多</h2>
     <div class="label">规则：鼠标碰一下中间的球它就会变大一下，鼠标滑过黑球消灭，给它碰中就会打回原形的了</div>
    <br>
     
@@ -555,6 +555,8 @@ function init(){
           
   <div class="comments" id="comments">
     
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDIzMC82Nzg1"></div>
+      
   </div>
 
 
@@ -588,7 +590,7 @@ function init(){
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -605,7 +607,7 @@ function init(){
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -926,6 +928,19 @@ function c() {
   
 
 
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
 
   
   

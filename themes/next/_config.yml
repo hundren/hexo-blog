@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "zgh 前端 量子"
+keywords: "zgh 前端 量子 游戏 H5 Game 意识"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -394,3 +394,7 @@ alipay: /zhi.jpg
 
 local_search:
   enable: true
+
+# Support for LiveRe comments system.
+# You can get your uid from https://livere.com/insight/myCode (General web site)
+livere_uid: MTAyMC8zMDIzMC82Nzg1
