@@ -17,7 +17,7 @@ tags: [微信小程序,填坑]
 反正我们知道它能直接调用微信本身的控件就行了
 ## 小体认识
 *MVVM*,*前后端分离*,*数据绑定*,*数据驱动*
-![](https://hundren.github.io/demo/blogimg/model.png)
+![](/images/model.png)
 # 一些代码
 自定义弹框
 ``` bash
