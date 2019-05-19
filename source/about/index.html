@@ -31,6 +31,9 @@ h2{
 	color: red;
 }
 .back-to-top,.sidebar-toggle{display: none}
+.canvas-box{
+	position: relative;
+}
 </style>
 <script type="text/javascript">
 var ctx;
@@ -272,16 +275,17 @@ function init(){
 </script>
 </head>
 <body onLoad="init();">
-<div class="label">现在的我: <span id="score">AA</span></div>
-
+	<div class="label">现在的我: <span id="score">AA</span></div>
 	<div class="label">曾经的我: <span id="max_score">AA</span></div>
 	<div class="label">出手次数: <span id="tries">0</span>次</div>
-    <canvas id="canvas" width="850" height="510">
-    </canvas>
+	<div class="canvas-box">
+		<canvas id="canvas" width="850" height="510">
+		</canvas>
+		<div id="timer">剩余时间:</div>
+	</div>
     <h2>把球弄大,了解我更多</h2>
     <div class="label">规则：鼠标碰一下中间的球它就会变大一下，鼠标滑过黑球消灭，给它碰中就会打回原形的了</div>
    <br/>
     
-	<div id="timer">剩余时间:<div>
     </body>
     </html>
