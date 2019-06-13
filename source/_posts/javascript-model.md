@@ -1,5 +1,6 @@
 ---
 title: 《JavaScript设计模式》很有感
+date: 2017-06-14 23:09:37
 categories: 学习笔记
 tags: [神书推荐]
 ---
