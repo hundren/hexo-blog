@@ -113,7 +113,6 @@ function show_popup(text,color){
     };
 
     var high = debounce (function() {
-      console.log('sssss',)
       var i=Math.round((Math.random() * (5 - 1) + 1));
       // i=5
       switch(i){
