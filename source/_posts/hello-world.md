@@ -14,6 +14,13 @@ tags: 第一次
 ```
 1001001111100101010110
 
+>试试区块 这是一个区块
+
+*这是斜体文字* 
+**这是加粗的文字** 
+<font size=4>我是变大的字</font>
+[这是个链接](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/performance/tips.html)
+
 ### 文章目录吸引了
 
 ``` bash
