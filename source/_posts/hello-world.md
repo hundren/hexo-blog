@@ -19,6 +19,9 @@ tags: 第一次
 *这是斜体文字* 
 **这是加粗的文字** 
 <font size=4>我是变大的字</font>
+<font color="green">我是有颜色字</font>
+![](./module/exports.png)
+
 [这是个链接](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/performance/tips.html)
 
 ### 文章目录吸引了
@@ -30,6 +33,12 @@ console.log('hello world');
 1. Red
 2. Green
 3. Blue
+
+表格
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
 
 ### 今天终于能够换来试试
 
