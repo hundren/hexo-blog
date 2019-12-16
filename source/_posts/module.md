@@ -1,6 +1,6 @@
 ---
 title: 是export还是module.exports，是import还是require，是ES6还是CommonJS，是爱❤️还是责任？
-date: 2019-10-12 08:09:37
+date: 2019-12-10 23:59:59
 categories: 学习笔记
 tags: [JS填坑,填坑]
 ---
