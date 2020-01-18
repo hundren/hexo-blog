@@ -216,7 +216,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Post meta display settings
@@ -813,3 +813,4 @@ images: images
 # Theme version
 version: 5.1.4
 # livere_uid: MTAyMC8zMDIzMC82Nzg1
+

@@ -4,7 +4,8 @@ date: 2016-02-14 23:09:37
 categories: 文章
 tags: 第一次
 ---
-博客换上Hexo主题，
+博客换上Hexo主题
+***
 ## 很久以前
 <!-- more -->
 ### 就被它的这个
@@ -20,8 +21,8 @@ tags: 第一次
 **这是加粗的文字** 
 <font size=4>我是变大的字</font>
 <font color="green">我是有颜色字</font>
-![](./module/exports.png)
-
+![](/images/module/exports.png)
+<code>代码字</code>
 [这是个链接](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/performance/tips.html)
 
 ### 文章目录吸引了
