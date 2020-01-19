@@ -101,20 +101,19 @@ ssh -i id_rsa root@xxx.xxx.xxx.x
 </div>    
 遇事不决先上图
 
-小弟不才，说说自己的见解，看图就很容易看出docker和虚拟机的最大区别，说人话就是，首先要说出docker里的容器和镜像的概念，容器就是根据你需要的镜像启动的，比如你有一个centos系统镜像，传统的虚拟机就是每个虚拟机上都用这个镜像往里面装一次，而docker就用这个镜像启动就可以了，这就生成了一个容器，而容器之间是独立的，比如你下了一个别人写好的nginx镜像，你run几下，就创造了几个简单的独立的前端部署容器，这样就能做到资源的复用，扯远了。
+小弟不才，说说自己的见解，看图就很容易看出docker和虚拟机的最大区别，说人话就是，首先要说出docker里的容器和镜像的概念，容器就是根据你需要的镜像启动的，比如你有一个centos系统镜像，传统的虚拟机就是每个虚拟机上都用这个镜像往里面装一次，而docker就用这个镜像启动就可以了，这就生成了一个容器，而容器之间是独立的，这样就能做到资源的复用，扯远了。
 
 ```bash
 //我也是用的别人的nginx镜像，简单记录一下
 docker pull nginx:latest
 docker run --name nginx-test -p 80:80 -d nginx
 ```
-那细心的朋友也发现，我最好的那个actions的配置其实就是一些ssh命令
+那细心的朋友也发现，我最后的那个actions的配置其实就是一些ssh命令
 ```bash
 docker exec 你的docker容器名称 rm -rf /usr/share/nginx/html
 docker cp /home/www 你的docker容器名称:/usr/share/nginx/html
 ```
-1、第一个就是先删除容器里的之前的项目，但也踩过坑，<code>docker exec</code>这个就是进入容器的命令了，之前我写的是<code>docker exec -it xxx /bin/bash</code>
-进去在<code>rm -rf</code>然后<code>exit</code>这样的，想法很美滋滋，但是ci命令上就报<code>err: the input device is not a TTY</code>后来换成这个
+1、第一个就是先删除容器里的之前的项目，但也踩过坑，<code>docker exec</code>这个就是进入容器的命令了，之前我写的是<code>docker exec -it xxx /bin/bash</code>进去再<code>rm -rf</code>然后<code>exit</code>这样的，想法很美滋滋，但是ci命令上就报<code>err: the input device is not a TTY</code>后来才换成现在的命令
 2、第二个就是把发上服务器的项目复制到容器里
 ## 开发应用
 过程也略。。。（到目前为止，如无意外的话，你只要push一下代码，就会进入到我们设置好的“陷阱”里，一顿自动操作执行下来，你的网站就部署上去了）
