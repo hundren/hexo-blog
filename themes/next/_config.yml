@@ -99,7 +99,7 @@ menu:
   categories: /categories
   tags: /tags
   about: /about
-  demo: http://demo.pppppxt.cc/
+  demo: http://demo.morningduck.cn
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -151,6 +151,7 @@ links_layout: block
 links:
   瓶子君小姐姐: https://github.com/sisterAn/blog
   程序员成长指北: http://www.inode.club/
+  橙光笔记: https://www.kai666666.top/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
