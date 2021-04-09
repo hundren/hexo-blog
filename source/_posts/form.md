@@ -165,18 +165,19 @@ export interface fieldType {
   }
 ```
 
+formData转为string监听，为了避免一些深层次的属性变化监听不到
 传入的时候fieldListMaker长这样
 
 ```js
 fieldListMaker(formData: any): Array<fieldType> {
-    // 你在这里可以做你想做的各种东西😊
-    return [
-      {
-        fieldType: 'text',
-        key: 'abc',
-        label: 'def'
-      }
-    ]
+  // 你在这里可以做你想做的各种东西😊
+  return [
+    {
+      fieldType: 'text',
+      key: 'abc',
+      label: 'def'
+    }
+  ]
 }
 ```
 
@@ -187,11 +188,11 @@ fieldListMaker(formData: any): Array<fieldType> {
 ```js
 import FormList from '@/components/form/index.vue'
 <FormList
-    ref="formRef"
-    :fieldListMaker="fieldListMaker"
-    :showBtn="false"
-    @change="handleFormChange"
-  />
+  ref="formRef"
+  :fieldListMaker="fieldListMaker"
+  :showBtn="false"
+  @change="handleFormChange"
+/>
 ```
 
 大家可以根据各自喜好，在里面添加一些方法，如：
