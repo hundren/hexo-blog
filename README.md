@@ -8,3 +8,4 @@
   生产： hexo g
  运行：hexo server
  部署：hexo deploy
+ 生产：hexo new
