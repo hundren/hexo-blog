@@ -125,7 +125,7 @@ arr.map()
 * 说说TCP的3次握手，第2次中断了会怎样
 * 指令有什么生命周期
 
-### 树根
+## 树根
 
 ```js
 function delayToEcho (msg, cb) {
@@ -168,16 +168,16 @@ promisify(delayToEcho)('msg')
 * react 的hooks有哪些
 * 箭头函数特点
 
-### 碧桂园
+## 碧桂园
 
 * 浏览器缓存
 * vue的diff
 * object对象有哪些不能枚举
 * 说说es6数组的新api
 
-### 欢聚shopeline
+## 欢聚shopeline
 
-## 一面
+### 一面
 
 * 浏览器的性能瓶颈
 * webpack的dll缓存你们的更新机制
@@ -195,7 +195,7 @@ promisify(delayToEcho)('msg')
 * 飞冰和umi的区别
 * react的jsx怎样转换成页面
 
-## 二面
+### 二面
 
 * webpack5的联邦绑定
 * 微前端怎样渲染那个url
@@ -204,7 +204,9 @@ promisify(delayToEcho)('msg')
 * websocket突然收到多个并发怎样处理
 * nodejs的global是什么
 
-### YY
+## YY
+
+### 一面
 
 * 树的最大权重路径问题（随机权重）
 * cookie跨域设置
@@ -218,7 +220,7 @@ promisify(delayToEcho)('msg')
 * vue 和 react 的对比
 * react Native 的写法
 
-## 二面
+### 二面
 
 * 我想发一个跨域，header需要怎样配置（Access-Control-Allow-Origin:*）
 * webpack5有什么新特性

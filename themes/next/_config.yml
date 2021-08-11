@@ -380,15 +380,15 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: true
-  appid:  BprwSQXSWU1vF1GVufJDFVsk-gzGzoHsz # your leancloud application appid
-  appkey: fCFE8FwLxoBDGYPJ3ImLz1XA # your leancloud application appkey
+  appid:  XTz0lGqc81gUFhiPz5qEvw8e-gzGzoHsz # your leancloud application appid
+  appkey: EAgeKqsYDDA1WgbPysD399NW # your leancloud application appkey
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just do IT # comment box placeholder
   avatar: hide # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-
+  # leancloud的token：IMUfaalElux5WXwNzpKtHqzf2sDNzddtIHjmpiDgLw9FxGXG9vd0OdeAU8xyIU3e-cn-n1
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
