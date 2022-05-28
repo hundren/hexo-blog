@@ -39,6 +39,10 @@ console.log('hello world');
 2. Green
 3. Blue
 
+* a
+* b
+* c
+
 表格
 | 左对齐 | 右对齐 | 居中对齐 |
 | :-----| ----: | :----: |
