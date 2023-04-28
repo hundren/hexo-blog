@@ -30,4 +30,6 @@ camera 可以试试用sin 和 cos
 
 ## 3D_text
 
-字体转换网站[https://gero3.github.io/facetype.js/]
+[字体转换网站](<https://gero3.github.io/facetype.js/>)
+
+我的博客即将同步至腾讯云开发者社区，邀请大家一同入驻：[传说门](<https://cloud.tencent.com/developer/support-plan?invite_code=11fg9t8w9fwtt>)
