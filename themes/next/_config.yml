@@ -64,7 +64,7 @@ footer:
   # -------------------------------------------------------------
   # Any custom text can be defined here.
 
-  custom_text: <span>备案号：<a target="_blank" href="http://www.beian.miit.gov.cn">粤ICP备17096574号</a></span>
+  custom_text: Just do IT!
 
 
 # ---------------------------------------------------------------
@@ -695,7 +695,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: true
+canvas_nest: false
 
 # three_waves
 three_waves: false
@@ -803,9 +803,9 @@ vendors:
   # https://github.com/revir/need-more-share2
   needMoreShare2:
 
-reward_comment: 请不要给我打赏！
-wechatpay: /wei.jpg
-alipay: /zhi.jpg
+# reward_comment: 请不要给我打赏！
+# wechatpay: /wei.jpg
+# alipay: /zhi.jpg
 
 # Assets
 css: css
