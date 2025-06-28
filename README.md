@@ -10,4 +10,4 @@ node 换个低版本吧 12.3.1吧 不然打包有问题 好奇怪
   生产： hexo g
   运行：hexo server
   部署：hexo deploy
-  生产：hexo new
+  新文章：hexo new

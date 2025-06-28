@@ -39,7 +39,7 @@ Temporal is intuitive, precise, and built for modern JavaScript development. �
 
 Here’s how Temporal addresses the shortcomings of the Date API:
 
-![](./say-goodbye-to-date-object/image.png)
+![](/images/bye/date.png)
 
 With Temporal, you get a reliable, intuitive API that eliminates the quirks of Date. 🎉
 

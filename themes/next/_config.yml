@@ -816,3 +816,10 @@ images: images
 version: 5.1.4
 # livere_uid: MTAyMC8zMDIzMC82Nzg1
 
+# Google AdSense
+google_adsense:
+  enable: true
+  client: ca-pub-3077099250991184
+  slot: 1234567890
+
+
